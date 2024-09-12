@@ -277,7 +277,7 @@ footer p {
 }
 
 /* Responsive Styles: Responsividade para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     header h1 {
         font-size: 2em;
     }
