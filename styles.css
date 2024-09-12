@@ -168,6 +168,30 @@ form input:focus, form select:focus, form textarea:focus {
     outline: none;
 }
 
+/* Responsividade específica para telas menores */
+@media (max-width: 600px) {
+    .login-container {
+        max-width: 90%; /* Ajusta a largura para 90% da tela */
+        margin: 20px auto; /* Reduz a margem superior */
+        padding: 20px; /* Reduz o padding para ocupar menos espaço */
+    }
+
+    .login-container h1 {
+        font-size: 1.8em; /* Reduz o tamanho do título */
+        margin-bottom: 20px; /* Ajusta o espaço inferior do título */
+    }
+
+    .login-container input {
+        padding: 10px; /* Reduz o padding dos campos de input */
+        font-size: 0.9em; /* Reduz o tamanho da fonte dos inputs */
+    }
+
+    .login-container button {
+        padding: 10px; /* Reduz o padding do botão */
+        font-size: 0.9em; /* Ajusta o tamanho da fonte do botão */
+    }
+}
+
 /* Tabela de Pacientes: Estilos da tabela */
 table {
     width: 100%;
@@ -282,34 +306,20 @@ footer p {
         font-size: 2em;
     }
 
-    nav ul {
-        flex-direction: column; /* Deixa os itens um embaixo do outro */
-        gap: 10px;
+    main {
+        padding: 30px 15px;
     }
 
-    nav ul li a {
-        padding: 10px; /* Ajusta o padding para telas menores */
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
     }
 
     .login-container {
-        width: 90%;
-        margin: 50px auto;
+        max-width: 90%; /* Ajusta a largura da tela em dispositivos menores */
     }
 
-    main {
-        padding: 20px;
-    }
-
-    .exam-section {
-        padding: 20px; /* Adiciona padding para formularios em telas pequenas */
-    }
-    
-    table {
-        font-size: 0.9em; /* Ajusta o tamanho da fonte da tabela em telas pequenas */
-    }
-
-    .actions button {
-        padding: 6px 12px; /* Reduz o padding dos botões de ação */
-        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+    table th, table td {
+        font-size: 0.9em;
     }
 }
