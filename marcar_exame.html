@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Exames</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Marcar Exames</h1>
+        <nav>
+            <ul>
+                <li><a href="recepcionista.html">Home</a></li>
+                <li><a href="cadastrar_paciente.html">Cadastrar Paciente</a></li>
+                <li><a href="agendar_consultas.html">Agendar Consultas</a></li>
+                <li><a href="marcar_exame.html">Marcar Exames</a></li>
+                <li><a href="index.html">Voltar para a Tela de Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Marcar Exames</h2>
+        <p>Recepcionista, selecione as informações para marcar um exame:</p>
+
+        <div class="exam-section">
+            <form action="marcar_exame.html" method="post">
+                <label for="patient-id">ID do Paciente:</label>
+                <input type="text" id="patient-id" name="patient-id" required>
+
+                <label for="exam-type">Tipo de Exame:</label>
+                <select id="exam-type" name="exam-type">
+                    <option value="sangue">Exame de Sangue</option>
+                    <option value="raio-x">Raio-X</option>
+                    <option value="ultrassom">Ultrassom</option>
+                    <option value="ressonancia">Ressonância Magnética</option>
+                </select>
+
+                <label for="exam-date">Data do Exame:</label>
+                <input type="date" id="exam-date" name="exam-date" required>
+
+                <label for="exam-time">Hora do Exame:</label>
+                <input type="time" id="exam-time" name="exam-time" required>
+
+                <button type="submit">Marcar Exame</button>
+            </form>
+        </div>
+
+        <!-- Exibição da confirmação de exame marcado -->
+        <section class="exam-confirmation hidden">
+            <h3>Exame Marcado com Sucesso</h3>
+            <div id="confirmation-details">
+                <!-- Detalhes da marcação do exame serão exibidos aqui -->
+            </div>
+            <button onclick="printConfirmation()">Imprimir Confirmação</button>
+        </section>
+    </main>
+
+    <script>
+        function printConfirmation() {
+            alert('A confirmação do exame será impressa.');
+            // Lógica de impressão pode ser adicionada aqui
+        }
+    </script>
+</body>
+</html>

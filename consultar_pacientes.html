@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Pacientes - Médico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Consultar Pacientes</h1>
+        <nav>
+            <ul>
+                <li><a href="medico.html">Home</a></li>
+                <li><a href="consultar_pacientes.html">Consultar Pacientes</a></li>
+                <li><a href="solicitar_exames.html">Solicitar Exames</a></li>
+                <li><a href="emitir_diagnosticos.html">Emitir Diagnósticos</a></li>
+                <li><a href="index.html">Voltar para a Tela de Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Pesquisar Paciente</h2>
+        <form id="searchPatientForm">
+            <label for="patientId">ID do Paciente:</label>
+            <input type="text" id="patientId" name="patientId" required>
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="patientDetails"></div>
+    </main>
+    <script src="medico.js"></script>
+</body>
+</html>

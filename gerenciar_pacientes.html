@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Pacientes - Administrador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciar Pacientes</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Home</a></li>
+                <li><a href="gerenciar_pacientes.html">Gerenciar Pacientes</a></li>
+                <li><a href="cadastrar_medicos.html">Cadastrar Médicos</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="index.html">Voltar para a Tela de Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Lista de Pacientes</h2>
+        
+        <!-- Campo de busca para pacientes -->
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Buscar paciente por nome...">
+            <button onclick="searchPatient()">Buscar</button>
+        </div>
+
+        <!-- Tabela de informações dos pacientes -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Contato</th>
+                    <th>Plano de Saúde</th>
+                    <th>Data de Cadastro</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="patient-list">
+                <!-- Exemplo de pacientes (esses dados podem ser carregados dinamicamente via JavaScript) -->
+                <tr>
+                    <td>1</td>
+                    <td>Maria Silva</td>
+                    <td>45</td>
+                    <td>(11) 98765-4321</td>
+                    <td>Plano Ouro</td>
+                    <td>12/03/2023</td>
+                    <td class="actions">
+                        <button class="view-details" onclick="viewdetails(1)">Ver Detalhes</button>
+                        <button class="delete" onclick="delete(1)">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>João Santos</td>
+                    <td>38</td>
+                    <td>(21) 99876-1234</td>
+                    <td>Plano Prata</td>
+                    <td>05/08/2022</td>
+                    <td class="actions">
+                        <button class="view-details" onclick="viewdetails(2)">Ver Detalhes</button>
+                        <button class="delete" onclick="delete(2)">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- Seção de detalhes de um paciente -->
+        <div id="patient-details" class="hidden">
+            <h3>Detalhes do Paciente</h3>
+            <p><strong>Nome:</strong> <span id="detail-name"></span></p>
+            <p><strong>Idade:</strong> <span id="detail-age"></span></p>
+            <p><strong>Contato:</strong> <span id="detail-contact"></span></p>
+            <p><strong>Plano de Saúde:</strong> <span id="detail-plan"></span></p>
+            <p><strong>Data de Cadastro:</strong> <span id="detail-date"></span></p>
+            <button onclick="hideDetails()">Fechar</button>
+        </div>
+    </main>
+
+    <script src="gerenciar_pacientes.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Exames - Médico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Solicitar Exames</h1>
+        <nav>
+            <ul>
+                <li><a href="medico.html">Home</a></li>
+                <li><a href="consultar_pacientes.html">Consultar Pacientes</a></li>
+                <li><a href="solicitar_exames.html">Solicitar Exames</a></li>
+                <li><a href="emitir_diagnosticos.html">Emitir Diagnósticos</a></li>
+                <li><a href="index.html">Voltar para a Tela de Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Solicitar Exame</h2>
+        <form id="requestExamForm">
+            <label for="patientId">ID do Paciente:</label>
+            <input type="text" id="patientId" name="patientId" required>
+            <label for="examType">Tipo de Exame:</label>
+            <input type="text" id="examType" name="examType" required>
+            <button type="submit">Solicitar Exame</button>
+        </form>
+        <div id="examRequestStatus"></div>
+        <a href="index.html" class="back-to-login">Voltar para Tela de Login</a>
+    </main>
+    <script src="medico.js"></script>
+</body>
+</html>
+

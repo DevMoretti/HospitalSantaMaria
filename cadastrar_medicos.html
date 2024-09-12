@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Médico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Médico</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="admin.html">Home</a></li>
+            <li><a href="gerenciar_pacientes.html">Gerenciar Pacientes</a></li>
+            <li><a href="cadastrar_medicos.html">Cadastrar Médicos</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+            <li><a href="index.html">Voltar para a Tela de Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="cadastro-medico">
+            <h2>Dados Pessoais</h2>
+
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="data-nascimento">Data de nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="endereco">Endereço residencial:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="telefone">Número de telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="documento">Documento de identidade (RG, CPF):</label>
+            <input type="text" id="documento" name="documento" required>
+
+            <label for="estado-civil">Estado civil:</label>
+            <input type="text" id="estado-civil" name="estado-civil" required>
+
+            <label for="nacionalidade">Nacionalidade:</label>
+            <input type="text" id="nacionalidade" name="nacionalidade" required>
+
+            <h2>Informações Profissionais</h2>
+
+            <label for="crm">Número de Registro no CRM:</label>
+            <input type="text" id="crm" name="crm" required>
+
+            <label for="especialidade">Especialidade médica (se houver):</label>
+            <input type="text" id="especialidade" name="especialidade">
+
+            <label for="subespecialidade">Subespecialidade (se houver):</label>
+            <input type="text" id="subespecialidade" name="subespecialidade">
+
+            <label for="experiencia">Anos de experiência:</label>
+            <input type="number" id="experiencia" name="experiencia" required>
+
+            <label for="faculdade">Nome da faculdade e ano de formatura:</label>
+            <input type="text" id="faculdade" name="faculdade" required>
+
+            <label for="certificados">Certificados e cursos complementares:</label>
+            <textarea id="certificados" name="certificados"></textarea>
+
+            <label for="experiencia-anterior">Experiências anteriores:</label>
+            <textarea id="experiencia-anterior" name="experiencia-anterior"></textarea>
+
+            <label for="cargo">Cargo ou função pretendida:</label>
+            <input type="text" id="cargo" name="cargo" required>
+
+            <h2>Documentação Necessária</h2>
+
+            <label for="diploma">Diploma de medicina:</label>
+            <input type="file" id="diploma" name="diploma" required>
+
+            <label for="certificado-residencia">Certificado de residência médica:</label>
+            <input type="file" id="certificado-residencia" name="certificado-residencia">
+
+            <label for="comprovante-crm">Comprovante de quitação com o CRM:</label>
+            <input type="file" id="comprovante-crm" name="comprovante-crm" required>
+
+            <label for="certidoes">Certidão negativa de antecedentes criminais:</label>
+            <input type="file" id="certidoes" name="certidoes" required>
+
+            <h2>Informações Complementares</h2>
+
+            <label for="historico-medico">Histórico médico e alergias:</label>
+            <textarea id="historico-medico" name="historico-medico"></textarea>
+
+            <label for="horarios">Horários disponíveis para plantões ou atendimentos:</label>
+            <input type="text" id="horarios" name="horarios" required>
+
+            <label for="numero-emergencia">Número de emergência (contato de familiares):</label>
+            <input type="text" id="numero-emergencia" name="numero-emergencia" required>
+
+            <input type="submit" value="Cadastrar Médico">
+        </form>
+    </main>
+    <footer>
+        <p>Sistema Hospitalar &copy; 2024</p>
+    </footer>
+</body>
+</html>
+

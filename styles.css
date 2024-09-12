@@ -1,0 +1,306 @@
+/* Global Styles: Define o estilo geral do corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
+    color: #333;
+}
+
+/* Header: Estilos para o cabeçalho */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Nav Styles: Estilo da barra de navegação */
+nav {
+    background-color: #4CAF50; /* Fundo verde como no header */
+    padding: 15px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    gap: 10px; /* Espaçamento entre os itens */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+/* Links da navegação */
+nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito hover nos links */
+nav ul li a:hover {
+    background-color: #ffeb3b;
+    color: #333;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Deixa os itens um embaixo do outro */
+        gap: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+}
+
+/* Main Content: Estilo principal do conteúdo */
+main {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 800px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo de botões gerais */
+button, input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito hover nos botões */
+button:hover, input[type="submit"]:hover {
+    background-color: #45a049;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Login Page Styles: Estilos para a página de login */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.login-container h1 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.login-container button {
+    width: 100%;
+}
+
+/* Form Styles: Estilos gerais de formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Labels dos formulários */
+form label {
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+/* Inputs e selects dos formulários */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Tabela de Pacientes: Estilos da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* Estilo de container de busca */
+.search-container {
+    margin-bottom: 20px;
+}
+
+#patient-details {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilo para centralizar as ações (botões) */
+.actions {
+    display: flex;
+    justify-content: center; /* Centraliza os botões dentro da célula */
+    gap: 10px; /* Espaço entre os botões */
+}
+
+.actions button {
+    padding: 8px 15px; /* Reduz o padding para tornar os botões menores */
+    font-size: 1rem; /* Diminui o tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease-in-out; /* Transição suave */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Botão "Ver Detalhes" */
+button.view-details {
+    background-color: #4CAF50; /* Cor para o botão de ver detalhes */
+    color: white; /* Cor do texto */
+}
+
+/* Hover no botão "Ver Detalhes" */
+button.view-details:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+}
+
+/* Botão "Excluir" */
+button.delete {
+    background-color: #f44336; /* Cor para o botão de excluir */
+    color: white; /* Cor do texto */
+}
+
+/* Hover no botão "Excluir" */
+button.delete:hover {
+    background-color: #d32f2f; /* Cor ao passar o mouse */
+}
+
+/* Back to Login Button */
+.back-to-login {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.back-to-login:hover {
+    background-color: #e64a19;
+}
+
+/* Footer: Estilos para o rodapé */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Styles: Responsividade para telas menores */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column; /* Deixa os itens um embaixo do outro */
+        gap: 10px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+    
+    .login-container {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    main {
+        padding: 20px;
+    }
+}

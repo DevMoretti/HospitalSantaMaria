@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - Administrador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Relatórios</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Home</a></li>
+                <li><a href="gerenciar_pacientes.html">Gerenciar Pacientes</a></li>
+                <li><a href="cadastrar_medicos.html">Cadastrar Médicos</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+                <li><a href="index.html">Voltar para a Tela de Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Gerar Relatórios</h2>
+        <p>Selecione o tipo de relatório que deseja gerar:</p>
+
+        <div class="report-section">
+            <form action="gerar_relatorio.html" method="post">
+                <label for="report-type">Tipo de Relatório:</label>
+                <select id="report-type" name="report-type">
+                    <option value="pacientes">Pacientes Cadastrados</option>
+                    <option value="medicos">Médicos Cadastrados</option>
+                    <option value="financeiro">Relatório Financeiro</option>
+                    <option value="agendamentos">Agendamentos</option>
+                </select>
+
+                <label for="report-start-date">Data de Início:</label>
+                <input type="date" id="report-start-date" name="start-date">
+
+                <label for="report-end-date">Data de Fim:</label>
+                <input type="date" id="report-end-date" name="end-date">
+
+                <button type="submit">Gerar Relatório</button>
+            </form>
+        </div>
+
+        <!-- Exibição dos relatórios gerados -->
+        <section class="report-results hidden">
+            <h3>Relatório Gerado</h3>
+            <div id="report-content">
+                <!-- Conteúdo do relatório será exibido aqui -->
+            </div>
+            <button onclick="exportReport()">Exportar para PDF</button>
+        </section>
+    </main>
+
+    <script>
+        function exportReport() {
+            alert('O relatório será exportado para PDF.');
+            // Lógica de exportação em PDF pode ser adicionada aqui
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Paciente</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="recepcionista.html">Home</a></li>
+            <li><a href="cadastrar_paciente.html">Cadastrar Paciente</a></li>
+            <li><a href="agendar_consultas.html">Agendar Consultas</a></li>
+            <li><a href="marcar_exame.html">Solicitar Exames</a></li>
+            <li><a href="index.html">Voltar para a Tela de Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="cadastro-paciente">
+            <h2>Dados Pessoais</h2>
+
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="data-nascimento">Data de nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero" required>
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="endereco">Endereço residencial:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="telefone">Telefone de contato:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="documento">Documento de identidade (RG ou CNH):</label>
+            <input type="text" id="documento" name="documento" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="estado-civil">Estado civil:</label>
+            <input type="text" id="estado-civil" name="estado-civil">
+
+            <label for="pais">Nome dos pais:</label>
+            <input type="text" id="pais" name="pais">
+
+            <label for="nacionalidade">Nacionalidade:</label>
+            <input type="text" id="nacionalidade" name="nacionalidade" required>
+
+            <h2>Informações de Contato de Emergência</h2>
+
+            <label for="nome-emergencia">Nome do contato de emergência:</label>
+            <input type="text" id="nome-emergencia" name="nome-emergencia" required>
+
+            <label for="telefone-emergencia">Telefone do contato de emergência:</label>
+            <input type="tel" id="telefone-emergencia" name="telefone-emergencia" required>
+
+            <label for="parentesco-emergencia">Parentesco:</label>
+            <input type="text" id="parentesco-emergencia" name="parentesco-emergencia" required>
+
+            <h2>Informações de Saúde</h2>
+
+            <label for="historico-medico">Histórico médico (doenças pré-existentes, cirurgias anteriores):</label>
+            <textarea id="historico-medico" name="historico-medico"></textarea>
+
+            <label for="alergias">Alergias (a medicamentos ou alimentos):</label>
+            <textarea id="alergias" name="alergias"></textarea>
+
+            <label for="medicacoes">Medicações em uso:</label>
+            <textarea id="medicacoes" name="medicacoes"></textarea>
+
+            <label for="tipo-sanguineo">Tipo sanguíneo:</label>
+            <input type="text" id="tipo-sanguineo" name="tipo-sanguineo">
+
+            <label for="plano-saude">Planos de saúde:</label>
+            <textarea id="plano-saude" name="plano-saude"></textarea>
+
+            <label for="vacinas">Vacinas:</label>
+            <textarea id="vacinas" name="vacinas"></textarea>
+
+            <label for="condicoes-cronicas">Condições crônicas:</label>
+            <textarea id="condicoes-cronicas" name="condicoes-cronicas"></textarea>
+
+            <h2>Informações Complementares</h2>
+
+            <label for="preferencias">Preferências pessoais:</label>
+            <textarea id="preferencias" name="preferencias"></textarea>
+
+            <label for="autorizacoes">Autorizações para procedimentos médicos:</label>
+            <textarea id="autorizacoes" name="autorizacoes"></textarea>
+
+            <input type="submit" value="Cadastrar Paciente">
+        </form>
+    </main>
+    <script src="cadastrar_paciente.js"></script>
+    <footer>
+        <p>Sistema Hospitalar &copy; 2024</p>
+    </footer>
+</body>
+</html>

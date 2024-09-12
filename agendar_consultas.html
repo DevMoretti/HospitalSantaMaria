@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Consultas - Recepcionista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Agendar Consultas</h1>
+        <nav>
+            <ul>
+                <li><a href="recepcionista.html">Home</a></li>
+                <li><a href="cadastrar_paciente.html">Cadastrar Paciente</a></li>
+                <li><a href="agendar_consultas.html">Agendar Consultas</a></li>
+                <li><a href="marcar_exame.html">Marcar Exames</a></li>
+                <li><a href="index.html">Voltar para a Tela de Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Agendamento de Consulta</h2>
+        <form id="scheduleAppointmentForm">
+            <label for="patientId">ID do Paciente:</label>
+            <input type="text" id="patientId" name="patientId" required>
+            <label for="appointmentDate">Data da Consulta:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+            <label for="doctorId">ID do Médico:</label>
+            <input type="text" id="doctorId" name="doctorId" required>
+            <button type="submit">Agendar Consulta</button>
+        </form>
+        <div id="appointmentStatus"></div>
+    </main>
+    <script src="recepcionista.js"></script>
+</body>
+</html>
